@@ -1,0 +1,155 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: white;
+  font-family: Inter, sans-serif;
+  background-color: hsl(233, 47%, 7%);
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  width: 75%;
+  max-width: 60rem;
+  border-radius: 0.65rem;
+}
+
+.card-info {
+  width: 50%;
+  padding: 2rem 4rem;
+  /* padding-right: 5rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-text > p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: small;
+  line-height: 1.5rem;
+}
+
+.colored {
+  color: hsl(277, 64%, 61%);
+}
+
+.card-img {
+  width: 50%;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat {
+  width: 5rem;
+}
+
+.stat-number {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.stat-detail {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 12px;
+}
+
+.card-img {
+  position: relative;
+}
+
+.card-img > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0.65rem 0.65rem 0;
+}
+
+.card-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  border-radius: 0 0.65rem 0.65rem 0;
+  background-color: hsla(277, 64%, 61%, 0.6);
+}
+div.attribution {
+  text-align: center;
+  height: 5cm;
+}
+
+@media (max-width: 1020px) {
+  main {
+    height: auto;
+  }
+
+  .card {
+    text-align: center;
+    flex-direction: column-reverse;
+    margin-top: 10vh;
+  }
+
+  .card-info {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  .stat {
+    padding: 0.7rem;
+  }
+
+  .card-img > img {
+    border-radius: 0.65rem 0.65rem 0 0;
+  }
+
+  .card-img::before {
+    border-radius: 0.65rem 0.65rem 0 0;
+    height: 99%;
+  }
+
+  footer {
+    margin-top: 10vh;
+  }
+}
